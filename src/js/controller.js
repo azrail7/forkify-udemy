@@ -128,6 +128,9 @@ const controlAddRecipe = async function (newRecipe) {
   }
   // location.reload();
 };
+const newFeature = function () {
+  console.log(`Welcome to the application`);
+};
 
 // we do this so controller does not have eventHandler
 // which belongs as DOM manipulation to view
@@ -139,6 +142,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('TEST');
+  newFeature();
 };
 init();
